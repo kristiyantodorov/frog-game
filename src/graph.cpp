@@ -27,11 +27,11 @@ std::string graph::current_setup()
 	for(int i = 0; i < 2*n + 1; i++)
 	{
 		if ( g[i] == DIRECTION_BACKWARDS )
-			str += "< ";
+			str += "<";
 		else if (g[i] == EMPTY )
-			str += "_ ";
+			str += "_";
 		else
-			str += "> ";
+			str += ">";
 	}
 	str += "\n";
 
@@ -92,7 +92,6 @@ void graph::dfs()
 	else
 	{
 		path.push_back(current_setup());
-		path.push_back("Solved!\n");
 		print();
 		exit(0);
 		return;
