@@ -9,6 +9,6 @@
 
 int main()
 {
-	graph gr;
-	gr.dfs();
+    graph gr;
+    gr.dfs();
 }
